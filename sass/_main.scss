@@ -1,0 +1,1832 @@
+    body {
+        main {
+            //slick slider plug in 
+            #slider {
+                position: relative;
+                .container-fluid {
+                    .row {
+                        .col-lg-12 {
+                            padding-right: 0px !important;
+                            padding-left: 0px !important;
+                            .SliderInner {
+                                position: absolute;
+                                transition: all 0.3s;
+                                top: 70px;
+                                left: 100px;
+                                z-index: 2;
+                                h3 {
+                                    position: absolute;
+                                    z-index: 5;
+                                    min-width: 347px;
+                                    max-width: 347px;
+                                    white-space: normal;
+                                    font-size: 41px;
+                                    line-height: 51px;
+                                    font-weight: 400;
+                                    color: rgb(0, 0, 0);
+                                    letter-spacing: 0px;
+                                    font-family: $home-font;
+                                    visibility: inherit;
+                                    transition: none 0s ease 0s;
+                                    text-align: inherit;
+                                    border-width: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    min-height: 103px;
+                                    max-height: 103px;
+                                    span {
+                                        color: $red-color;
+                                    }
+                                }
+                                p {
+                                    position: absolute;
+                                    z-index: 6;
+                                    min-width: 429px;
+                                    max-width: 429px;
+                                    white-space: normal;
+                                    font-size: 17px;
+                                    line-height: 29px;
+                                    font-weight: 400;
+                                    color: rgb(109, 106, 106);
+                                    letter-spacing: 0px;
+                                    font-family: Lora;
+                                    visibility: inherit;
+                                    transition: none 0s ease 0s;
+                                    text-align: inherit;
+                                    border-width: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    top: 120px;
+                                    min-height: 89px;
+                                    max-height: 89px;
+                                }
+                                img {
+                                    top: 260px;
+                                    position: absolute;
+                                }
+                            }
+                            .bannerSlider {
+                                position: relative;
+                                .slick-dots {
+                                    list-style: none;
+                                    height: 90px;
+                                    width: 22px;
+                                    transform: rotate( -90deg) translateY(-6px) !important;
+                                    top: auto !important;
+                                    left: 50% !important;
+                                    bottom: -20px !important;
+                                    position: absolute;
+                                    display: block;
+                                    z-index: 1000;
+                                    li {
+                                        button {
+                                            color: $nav-font-color;
+                                            background-color: $nav-font-color;
+                                            width: 10px;
+                                            border: 0px;
+                                            outline: 0px;
+                                            height: 10px;
+                                            transition: all 0.4s ease;
+                                            border-radius: 50%;
+                                            height: 10px;
+                                            width: 10px;
+                                            text-indent: -9999px;
+                                            &:hover {
+                                                width: 12px;
+                                                height: 12px;
+                                            }
+                                        }
+                                    }
+                                    .slick-active {
+                                        button {
+                                            width: 12px;
+                                            height: 12px;
+                                        }
+                                    }
+                                }
+                                .sliderimage {
+                                    img {
+                                        width: 100%;
+                                        height: 475px;
+                                        object-fit: cover;
+                                    }
+                                }
+                                .iconright {
+                                    position: absolute;
+                                    z-index: 10000;
+                                    top: 50% !important;
+                                    opacity: 0.5;
+                                    right: 0;
+                                    font-size: 50px;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+                                .iconleft {
+                                    position: absolute;
+                                    z-index: 10000;
+                                    top: 50% !important;
+                                    font-size: 50px;
+                                    left: 0;
+                                    opacity: 0.5;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //data filter js productlar filteri
+            #isotope {
+                margin-top: 70px;
+                .container {
+                    // padding: 0;
+                    // margin: 0;
+                    overflow: hidden;
+                    .leftside {
+                        // padding-left: 20px;
+                        // padding-right: 20px;
+                        .categories {
+                            text-align: left;
+                            h6 {
+                                // margin-left: 55px;
+                                font-family: Montserrat;
+                                font-size: 12px;
+                                line-height: 2em;
+                                font-weight: 500;
+                                letter-spacing: 0.1em;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .range {
+                            margin-bottom: 50px;
+                            .slidecontainer {
+                                width: 100%;
+                                .slider {
+                                    -webkit-appearance: none;
+                                    width: 100%;
+                                    height: 3px;
+                                    border-radius: 5px;
+                                    background: rgb(0, 0, 0);
+                                    outline: none;
+                                    opacity: 0.7;
+                                    -webkit-transition: .2s;
+                                    transition: opacity .2s;
+                                }
+                                .slider::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 50%;
+                                    background: rgb(0, 0, 0);
+                                    cursor: pointer;
+                                }
+                                .slider::-moz-range-thumb {
+                                    width: 25px;
+                                    height: 25px;
+                                    border-radius: 50%;
+                                    background: rgb(0, 0, 0);
+                                    cursor: pointer;
+                                }
+                            }
+                            .titleprice {
+                                font-family: 'Montserrat', sans-serif;
+                                display: flex;
+                                font-size: 12px;
+                                justify-content: space-between;
+                                align-items: center;
+                                p {
+                                    margin: 0px 0px;
+                                    color: $home-font-color;
+                                }
+                                h6 {
+                                    font-size: 12px;
+                                    font-weight: 800;
+                                    margin: 0px 0px 1px 25px;
+                                    a {
+                                        color: rgb(0, 0, 0);
+                                        transition: all 0.3s;
+                                        text-decoration: none;
+                                    }
+                                    &:hover {
+                                        a {
+                                            color: orangered;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding-left: 0px!important;
+                        margin-bottom: 30px;
+                        li {
+                            border-radius: 24px;
+                            list-style: none;
+                            padding: 8px 0px;
+                            margin: 5px;
+                            letter-spacing: 1px;
+                            cursor: pointer;
+                            transition: 0.3s linear;
+                            &:hover {
+                                color: orangered;
+                            }
+                        }
+                        .active {
+                            color: orangered;
+                        }
+                    }
+                    .product {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .headiso {
+                            display: flex !important;
+                            align-items: center;
+                            flex-wrap: wrap!important;
+                            justify-content: space-between;
+                            .count {
+                                .resultcount {
+                                    color: $home-font-color;
+                                    margin: 20px 10px;
+                                }
+                            }
+                            .form-select {
+                                margin-left: 20px;
+                                width: 240px;
+                                padding: 7px 7px;
+                                margin-right: 20px;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                line-height: 1.5;
+                                color: $home-font-color;
+                                background-color: $white-color;
+                                background-size: 16px 12px;
+                                border: 1px solid rgb(194, 192, 192);
+                                border-radius: 0px;
+                                cursor: pointer;
+                                transition: border-color .15s ease-in-out, ;
+                                &:focus,
+                                 :active {
+                                    box-shadow: 0px 0px 0px 0px;
+                                }
+                                .option {
+                                    background-color: white;
+                                    color: $home-font-color;
+                                    padding: 20px 20px!important;
+                                    &:hover {
+                                        background-color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .itemBox {
+                        .item {
+                            position: relative;
+                            width: 250px;
+                            height: 420px;
+                            margin: 5px;
+                            .img {
+                                overflow: hidden;
+                                position: absolute;
+                                line-height: 0px;
+                                span {
+                                    left: 0;
+                                    position: absolute;
+                                    display: block;
+                                    top: 0;
+                                    width: auto;
+                                    height: 30px;
+                                    font-family: $home-font;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    letter-spacing: 1px;
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    margin: 10px 0 0 12px;
+                                    padding: 5px 13px;
+                                    z-index: 100;
+                                }
+                                .new {
+                                    color: $white-color;
+                                    background-color: $red-color;
+                                    border-color: transparent $red-color transparent transparent;
+                                }
+                                .outofstock {
+                                    color: $white-color;
+                                    background-color: $nav-font-color;
+                                    border-color: transparent $nav-font-color transparent transparent;
+                                }
+                                .sale {
+                                    color: $nav-font-color;
+                                    background-color: $white-color;
+                                    border-color: transparent $white-color transparent transparent;
+                                }
+                                img {
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    transition: 0.3s ease;
+                                    cursor: pointer;
+                                }
+                                &:hover {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                            .title {
+                                cursor: pointer;
+                                top: 321px;
+                                font-family: Montserrat, sans-serif;
+                                position: absolute;
+                                text-align: center;
+                                width: 250px;
+                                padding: 20px 40px;
+                                h6 {
+                                    font-weight: 600;
+                                    font-size: 12px;
+                                    color: black;
+                                }
+                                #normal {
+                                    display: block;
+                                    color: grey;
+                                    transition: all 0.3s ease-in-out;
+                                    #disabled {
+                                        text-decoration: line-through;
+                                    }
+                                    #bright {
+                                        font-weight: 700 !important;
+                                        color: $nav-font-color!important;
+                                    }
+                                }
+                                #none {
+                                    color: gray;
+                                    transition: all 0.3s ease-in-out;
+                                    display: none;
+                                    font-size: 10px;
+                                    &:hover {
+                                        color: orange;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                #normal {
+                                    display: none;
+                                }
+                                #none {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #productlist {
+                height: 225px;
+                background-color: #fafaf9;
+                vertical-align: middle;
+                .headTitle {
+                    top: 50%;
+                    position: absolute;
+                    position: relative;
+                    display: table-cell;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 auto;
+                    font-family: 'Lora', serif;
+                    h1 {
+                        font-family: $home-font;
+                        font-size: 50px;
+                        line-height: 1.32em;
+                        color: $nav-font-color;
+                        font-weight: 400;
+                    }
+                    p {
+                        color: $home-font-color;
+                        margin: 8px 0px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 17px;
+                        text-transform: none;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+            //shekilin ustundeki buttondan modala kecid
+            #valentine {
+                .container-fluid {
+                    .row {
+                        .col-lg-12 {
+                            padding: 100px 65px;
+                            background-color: $bg-color;
+                            .col-lg-6 {
+                                .item {
+                                    cursor: pointer;
+                                    position: relative;
+                                    .image {
+                                        overflow: hidden;
+                                        img {
+                                            transition: all 0.1s ease-in-out;
+                                            width: 100%;
+                                        }
+                                    }
+                                    &:hover .image {
+                                        img {
+                                            transform: scale(1.05);
+                                        }
+                                    }
+                                    .valentine-modal {
+                                        position: absolute;
+                                        top: 37%;
+                                        left: 42%;
+                                        .playbtn {
+                                            border-radius: 50%;
+                                            width: 100px;
+                                            height: 100px;
+                                            i {
+                                                text-align: center;
+                                                font-size: 20px;
+                                                color: $red-color;
+                                            }
+                                        }
+                                        .modal {
+                                            z-index: 999999999999 !important;
+                                            .modal-dialog {
+                                                z-index: 999999999999 !important;
+                                                .modal-content {
+                                                    background-color: $white-color;
+                                                    width: 660px;
+                                                    height: 400px;
+                                                    .modal-header {
+                                                        border-bottom: 0px;
+                                                        .btn-close {
+                                                            i {
+                                                                color: $white-color;
+                                                            }
+                                                            border-radius: 50%;
+                                                            background-color: red;
+                                                        }
+                                                    }
+                                                    .modal-body {
+                                                        iframe {
+                                                            width: 560px;
+                                                            height: 315px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .col-lg-6 {
+                                margin-left: 20px;
+                                padding: 20px;
+                                h2 {
+                                    margin-bottom: 5px;
+                                    font-family: $home-font;
+                                    font-size: 38px;
+                                    line-height: 1.447em;
+                                    span {
+                                        color: $red-color;
+                                    }
+                                }
+                                p {
+                                    color: $home-font-color;
+                                    font-size: 18px;
+                                    font-family: $home-font;
+                                }
+                                .iconlip {
+                                    display: flex;
+                                    margin-top: 10px;
+                                    img {
+                                        margin-left: 10px;
+                                        margin-top: 5px;
+                                        width: fit-content;
+                                        height: fit-content;
+                                    }
+                                    p {
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //expertler sectionu
+            #experts {
+                .container {
+                    padding: 20px 20px;
+                    .row {
+                        .col-lg-12 {
+                            text-align: center;
+                            padding: 60px;
+                            font-family: $home-font;
+                            h2 {
+                                color: $nav-font-color;
+                                font-size: 38px;
+                            }
+                            p {
+                                color: $home-font-color;
+                                font-size: 20px;
+                                margin: 10px 230px;
+                            }
+                        }
+                        .col-lg-3 {
+                            .item {
+                                img {
+                                    padding: 20px;
+                                }
+                                .title {
+                                    padding: 20px;
+                                    h5 {
+                                        font-size: 14px;
+                                        color: $nav-font-color;
+                                    }
+                                    p {
+                                        font-size: 12px;
+                                        color: $home-font-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //subscribe section
+            #join {
+                background-image: url(../img/join-background-img.jpg);
+                background-position: 50% -55px;
+                position: static;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                overflow: hidden;
+                width: 100%;
+                height: 400px;
+                .center {
+                    position: relative;
+                    top: 120px;
+                    // display: table;
+                    // table-layout: fixed;
+                    margin: 0px 360px;
+                    h3 {
+                        font-size: 32px;
+                        color: $white-color;
+                        font-family: $home-font;
+                    }
+                    .input-group {
+                        .form-control {
+                            padding: 20px;
+                            border-radius: 0px;
+                            outline: rgb(255, 255, 255);
+                            background-color: rgba(255, 255, 255, 1);
+                            border-color: rgba(232, 232, 232, 1);
+                            border-radius: 0;
+                            border: 0px solid #ffffff;
+                            &:focus {
+                                box-shadow: 0px 0px 0px 0px;
+                            }
+                        }
+                        .btn {
+                            padding: 0px 50px;
+                            border-radius: 0px;
+                            color: $white-color;
+                            border: 0px solid #ffffff;
+                            background-color: $red-color;
+                            &:focus {
+                                box-shadow: 0px 0px 0px 0px;
+                            }
+                            &:hover {
+                                background-color: orangered;
+                            }
+                        }
+                    }
+                }
+            }
+            // productlar sectionuproductlar sectionu
+            #related {
+                background-color: $bg-color;
+                .container {
+                    .row {
+                        padding: 100px 20px;
+                        .col-12 {
+                            text-align: center;
+                            padding: 0px 60px;
+                            font-family: $home-font;
+                            .lefth6 {
+                                font-family: 'Montserrat', sans-serif;
+                                text-align: left;
+                                font-size: 12px;
+                                font-weight: 900;
+                            }
+                        }
+                        .blogtext {
+                            padding: 60px 0px;
+                            h2 {
+                                padding: 20px;
+                                color: $nav-font-color;
+                                font-size: 38px;
+                            }
+                            #headtextp {
+                                color: $home-font-color;
+                                font-size: 20px;
+                                margin: 10px 230px;
+                            }
+                        }
+                        .inner {
+                            display: flex;
+                            flex-wrap: wrap;
+                            .item {
+                                margin-right: 25px;
+                                margin-left: 5px;
+                                position: relative;
+                                overflow: hidden;
+                                .sale {
+                                    left: 0;
+                                    position: absolute;
+                                    display: block;
+                                    font-family: $home-font;
+                                    top: 0;
+                                    width: auto;
+                                    height: 30px;
+                                    font-family: $home-font;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    letter-spacing: 1px;
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    margin: 10px 0 0 12px;
+                                    padding: 5px 13px;
+                                    z-index: 100;
+                                    color: $nav-font-color;
+                                    background-color: $white-color;
+                                    border-color: transparent $white-color transparent transparent;
+                                }
+                                .title {
+                                    cursor: pointer;
+                                    top: 321px;
+                                    font-family: Montserrat, sans-serif;
+                                    text-align: center;
+                                    width: 250px;
+                                    padding: 20px 40px;
+                                    h6 {
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        color: black;
+                                    }
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                    #normal {
+                                        display: block;
+                                        color: grey;
+                                        transition: all 0.3s ease-in-out;
+                                        #disabled {
+                                            text-decoration: line-through;
+                                        }
+                                        #bright {
+                                            font-weight: 700 !important;
+                                            color: $nav-font-color!important;
+                                        }
+                                    }
+                                    #none {
+                                        color: gray;
+                                        transition: all 0.3s ease-in-out;
+                                        display: none;
+                                        font-size: 10px;
+                                        &:hover {
+                                            color: orange;
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    .img {
+                                        img {
+                                            transform: scale(1.1) translateZ(0);
+                                        }
+                                    }
+                                    #normal {
+                                        display: none;
+                                    }
+                                    #none {
+                                        display: block;
+                                    }
+                                }
+                                .img {
+                                    overflow: hidden;
+                                    img {
+                                        transition: all 0.3s;
+                                        cursor: pointer;
+                                        width: 100%;
+                                    }
+                                }
+                                h5 {
+                                    color: $nav-font-color;
+                                    font-size: 25px;
+                                    margin-top: 20px;
+                                    cursor: pointer;
+                                }
+                                p {
+                                    color: $home-font-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //blog sectionu 
+            #blog {
+                .container-fluid {
+                    padding: 20px 20px;
+                    background-color: $bg-color;
+                    .row {
+                        .col-lg-12 {
+                            text-align: center;
+                            padding: 0px 60px;
+                            font-family: $home-font;
+                            .blogtext {
+                                padding: 60px 0px;
+                                h2 {
+                                    padding: 20px;
+                                    color: $nav-font-color;
+                                    font-size: 38px;
+                                }
+                                #headtextp {
+                                    color: $home-font-color;
+                                    font-size: 20px;
+                                    margin: 10px 230px;
+                                }
+                            }
+                            .inner {
+                                display: flex;
+                                .item {
+                                    margin-right: 25px;
+                                    position: relative;
+                                    overflow: hidden;
+                                    .headdate {
+                                        position: absolute;
+                                        font-size: 10px;
+                                        z-index: 9999999999;
+                                        font-weight: 500;
+                                        top: 10px;
+                                        left: 10px;
+                                        text-transform: uppercase;
+                                        letter-spacing: .15em;
+                                        color: #000;
+                                        background-color: #fff;
+                                        line-height: 1em;
+                                        padding: 12px 16px 10px;
+                                        a {
+                                            font-size: 12px;
+                                            transition: all 0.3s;
+                                            text-decoration: none;
+                                            color: $home-font-color;
+                                        }
+                                        &:hover {
+                                            a {
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+                                    &:hover {
+                                        .img {
+                                            img {
+                                                transform: scale(1.1) translateZ(0);
+                                            }
+                                        }
+                                    }
+                                    .img {
+                                        overflow: hidden;
+                                        img {
+                                            transition: all 0.3s;
+                                            cursor: pointer;
+                                            width: 100%;
+                                        }
+                                    }
+                                    h5 {
+                                        color: $nav-font-color;
+                                        font-size: 25px;
+                                        margin-top: 20px;
+                                        cursor: pointer;
+                                    }
+                                    p {
+                                        color: $home-font-color;
+                                        color: $home-font-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //slick slider plug in
+            #lastslider {
+                .container-fluid {
+                    .row {
+                        .col-lg-8 {
+                            .sliderInner {
+                                .mainSlider {
+                                    .iconleft {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        transform: translateY(-50%);
+                                        z-index: 999999;
+                                        font-size: 30px;
+                                        opacity: 0.5;
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    .iconright {
+                                        z-index: 999999;
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 0;
+                                        transform: translateY(-50%);
+                                        font-size: 30px;
+                                        opacity: 0.5;
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    .slidercontent {
+                                        .item {
+                                            padding: 100px 0px;
+                                            img {
+                                                display: inline;
+                                                width: 87px;
+                                                height: 87px;
+                                            }
+                                            .innerp {
+                                                padding: 0px 80px;
+                                                color: #4b4747;
+                                                font-family: Lora, serif;
+                                                font-style: italic;
+                                                font-size: 24px;
+                                                line-height: 1.5em;
+                                            }
+                                            h6 {
+                                                color: $nav-font-color;
+                                                font-family: Montserrat;
+                                                font-size: 12px;
+                                                font-weight: bold;
+                                                line-height: 2em;
+                                                letter-spacing: 0.1em;
+                                                margin-top: 30px;
+                                                margin-bottom: 0px;
+                                                text-transform: uppercase;
+                                            }
+                                            .job {
+                                                color: $home-font-color;
+                                                font-size: 12px;
+                                                letter-spacing: 0;
+                                                line-height: 24px;
+                                                text-transform: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // about us section
+            #aboutus {
+                background-image: url(../img/aboutus.jpg);
+                background-position: 50% -55px;
+                position: static;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                overflow: hidden;
+                width: 100%;
+                height: 400px;
+                .center {
+                    position: relative;
+                    top: 120px;
+                    // display: table;
+                    // table-layout: fixed;
+                    margin: 0px 360px;
+                    h3 {
+                        font-size: 50px;
+                        line-height: 1.32em;
+                        color: $nav-font-color;
+                        font-family: $home-font;
+                    }
+                    p {
+                        vertical-align: middle;
+                        font-family: Lora, serif;
+                        font-size: 17px;
+                        font-style: italic;
+                        text-transform: none;
+                        letter-spacing: 0;
+                        color: #6d6a6a;
+                    }
+                }
+            }
+            // mesaj bolmesi
+            #getintouch {
+                padding-top: 120px !important;
+                padding-bottom: 120px !important;
+                .itempic {
+                    text-align: center;
+                    padding-top: 50px !important;
+                    padding-right: 9% !important;
+                    padding-bottom: 100px !important;
+                    padding-left: 9% !important;
+                    background-color: #f8f8f8 !important;
+                    .img {
+                        img {
+                            height: 154px;
+                            max-width: 154px;
+                            vertical-align: top;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .textinner {
+                        h2 {
+                            margin-bottom: 5px;
+                            font-family: $home-font;
+                            font-size: 38px;
+                            line-height: 1.447em;
+                            span {
+                                color: $red-color;
+                            }
+                            margin-bottom: 30px;
+                        }
+                        p {
+                            color: $home-font-color;
+                            font-size: 18px;
+                            font-family: $home-font;
+                            margin-bottom: 50px;
+                        }
+                        .iconlip {}
+                    }
+                }
+                .innertouch {
+                    padding: 10px 25px;
+                    h2 {
+                        font-size: 38px;
+                        line-height: 2em;
+                        font-weight: 400;
+                        color: $nav-font-color;
+                        font-family: $home-font;
+                        margin: 0 0 19px;
+                    }
+                    p {
+                        color: $home-font-color;
+                        font-family: $home-font;
+                    }
+                    .inputs {
+                        form {
+                            font-family: Montserrat, sans-serif;
+                            .form-control {
+                                color: #959595;
+                                font-size: 12px;
+                                background-color: rgba(255, 255, 255, 1);
+                                border-color: rgba(232, 232, 232, 1);
+                                width: 100%;
+                                margin: 0 0 15px;
+                                padding: 19px 18px;
+                                line-height: 20px;
+                                font-weight: inherit;
+                                border: 1px solid #e8e8e8;
+                                border-radius: 0;
+                                outline: 0;
+                                -webkit-appearance: none;
+                                box-sizing: border-box;
+                                transition: border-color .2s ease-in-out;
+                                &:focus {
+                                    box-shadow: 0px 0px 0px 0px;
+                                }
+                            }
+                            .btn {
+                                font-weight: 500;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                height: 60px;
+                                border-radius: 0px;
+                                text-transform: uppercase;
+                                box-sizing: border-box;
+                                transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+                                padding: 13px 42px;
+                                color: $white-color;
+                                background-color: $red-color;
+                                border: 1px solid transparent;
+                                &:hover {
+                                    background-color: orangered;
+                                }
+                                &:focus {
+                                    box-shadow: 0px 0px 0px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // modalli fotolar gallerisi
+            #gallery {
+                padding: 70px 50px;
+                margin-bottom: 50px;
+                #leftorange {
+                    .orangemodal {
+                        .modal {
+                            .modal-dialog {
+                                height: 400px;
+                                width: 300px;
+                                .modal-content {
+                                    .modal-body {
+                                        .single-item {
+                                            width: 100%;
+                                            img {
+                                                width: 100%;
+                                            }
+                                            i {
+                                                position: absolute;
+                                                top: 50%;
+                                                z-index: 9999999;
+                                                font-size: 40px;
+                                                color: $home-font-color;
+                                                &:hover {
+                                                    color: $nav-font-color;
+                                                }
+                                            }
+                                            .iconleft {
+                                                left: 5px;
+                                            }
+                                            .iconright {
+                                                right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #rightorange {
+                    .summary {
+                        padding: 20px 10px;
+                        font-family: $home-font;
+                        .headTitle {
+                            font-size: 38px;
+                            line-height: 1.447em;
+                        }
+                        .price {
+                            margin: 30px 0px;
+                            position: relative;
+                            display: block;
+                            margin: 4px 0 0;
+                            color: #afafaf;
+                        }
+                        .p-description {
+                            margin: 30px 0px;
+                            p {
+                                color: $home-font-color;
+                                font-size: 18px;
+                            }
+                        }
+                        .cart {
+                            .quantity-buttons {
+                                margin: 30px 0px;
+                                display: flex;
+                                font-family: Montserrat, sans-serif;
+                                justify-content: flex-start;
+                                width: 100%;
+                                .number {
+                                    width: 240px!important;
+                                    border: 1px solid #eee;
+                                    box-sizing: border-box;
+                                    line-height: 50px;
+                                    height: 51px;
+                                    padding: 0 22px;
+                                    outline: 0px;
+                                }
+                            }
+                            button {
+                                background-color: #080808;
+                                padding: 0px 42px!important;
+                                color: $white-color;
+                                width: auto;
+                                display: inline-block;
+                                border: 1px solid transparent;
+                                white-space: nowrap;
+                                cursor: pointer;
+                                z-index: 3;
+                                outline: 0;
+                                font-size: 12px;
+                                line-height: 1.833em;
+                                letter-spacing: .1em;
+                                font-weight: 800;
+                                text-transform: uppercase;
+                                box-sizing: border-box;
+                                border-radius: 0;
+                                margin: 0;
+                            }
+                        }
+                        .product_meta {
+                            .normal {
+                                margin-top: 30px;
+                                font-size: 12px;
+                                color: $nav-font-color;
+                                font-weight: 800;
+                                font-family: Montserrat, sans-serif;
+                                a {
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                    color: $home-font-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // content teshkil eden tablark
+            #tabs {
+                .customtabs {
+                    position: relative;
+                    width: 100%;
+                    vertical-align: middle;
+                    display: block;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 0;
+                    text-align: left;
+                    clear: both;
+                    .nav-tabs {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        border: 1px solid #eee;
+                        margin-bottom: -1px;
+                        margin-left: -1px;
+                        .nav-link {
+                            color: #1b1b1b;
+                            font-family: Montserrat;
+                            font-size: 12px;
+                            line-height: 2em;
+                            font-weight: 800;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                            position: relative;
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 15px 47px;
+                        }
+                        .active {
+                            color: $white-color;
+                            background-color: $red-color;
+                        }
+                    }
+                }
+                .tab-content {
+                    border-top: 1px solid #eee;
+                    border-bottom: 1px solid #eee;
+                    .tab-pane {
+                        margin: 40px 0px;
+                        .customtab-inner {
+                            font-family: $home-font;
+                            .tabh3 {
+                                font-weight: 500;
+                                font-size: 30px;
+                                line-height: 1.4em;
+                            }
+                            .tabp {
+                                font-size: 15px;
+                                color: $home-font-color;
+                                font-family: 'Lora', sans-serif;
+                                line-height: 1.6em;
+                            }
+                        }
+                        .shop_attributes {
+                            tbody {
+                                tr {
+                                    th {
+                                        td {}
+                                    }
+                                }
+                            }
+                        }
+                        .reviewform {
+                            font-family: $home-font;
+                            .reviewtitle {
+                                h1 {}
+                                .form {
+                                    form {
+                                        .input {
+                                            .form-label {}
+                                            .form-control {}
+                                        }
+                                        .form-check {
+                                            .form-check-label {}
+                                        }
+                                        .btn {
+                                            padding: 13px 42px;
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            letter-spacing: 0.1em;
+                                            height: 60px;
+                                            border-radius: 0px;
+                                            text-transform: uppercase;
+                                            box-sizing: border-box;
+                                            transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+                                            font-family: 'Montserrat', sans-serif;
+                                            color: $white-color;
+                                            background-color: $red-color;
+                                            border: 1px solid transparent;
+                                            &:hover {
+                                                background-color: orangered;
+                                            }
+                                            &:focus {
+                                                box-shadow: 0px 0px 0px 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #comments {
+                            position: relative;
+                            width: 100%;
+                            vertical-align: middle;
+                            .reviews-title {
+                                padding: 60px 15px 5px;
+                                font-size: 30px;
+                                line-height: 24px;
+                                margin: 3px 0 60px;
+                                color: $nav-font-color;
+                                font-family: "Playfair Display", serif;
+                                font-weight: 400;
+                            }
+                            .commentlist {
+                                list-style: none;
+                                li {
+                                    margin: 0 0 23px;
+                                    .comment_container {
+                                        width: 100%;
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        position: relative;
+                                        img {
+                                            float: left;
+                                            max-width: 100%;
+                                            height: auto;
+                                            width: 70px;
+                                            border-radius: 4em;
+                                            border-radius: 50%;
+                                        }
+                                        .comment-text {
+                                            padding: 0 0 0 90px;
+                                            .info {
+                                                color: $nav-font-color;
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                                font-family: Montserrat, sans-serif;
+                                                letter-spacing: .1em;
+                                                text-transform: uppercase;
+                                                line-height: 15px;
+                                                padding-bottom: 17px;
+                                                .author {
+                                                    color: $nav-font-color;
+                                                    font-weight: 800;
+                                                    vertical-align: top;
+                                                }
+                                                .time {
+                                                    display: inline-block;
+                                                    font-size: 10px;
+                                                    font-weight: 500;
+                                                    color: $home-font-color;
+                                                    letter-spacing: .15em;
+                                                    margin: 0 0 0 3px;
+                                                }
+                                            }
+                                            .description {
+                                                p {
+                                                    font-family: 'Lora';
+                                                    color: #6d6a6a;
+                                                    margin: 0 0 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // xerite sectionu
+            #map {
+                .gmap_canvas {
+                    overflow: hidden;
+                    padding-bottom: 26.25%;
+                    position: relative;
+                    iframe {
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+    
+    // responsive ekran
+    @media only screen and (max-width: 992px) {
+        body {
+            main {
+                //slick slider plug in 
+                #slider {
+                    .container-fluid {
+                        .row {
+                            .col-lg-12 {
+                                .SliderInner {
+                                    width: 100%;
+                                    top: 65px !important;
+                                    left: 0px !important;
+                                }
+                                h3 {
+                                    min-width: 0;
+                                    font-size: 32px;
+                                    span {}
+                                }
+                                p {
+                                    min-width: 330px !important;
+                                    max-width: 0 !important;
+                                }
+                                img {}
+                            }
+                            .bannerSlider {
+                                position: absolute;
+                                .sliderimage {
+                                    img {}
+                                }
+                                .iconright {
+                                    i {
+                                        right: 13px
+                                    }
+                                }
+                                .iconleft {
+                                    i {
+                                        left: 13px
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //data filter js productlar filteri
+                #isotope {
+                    .container {
+                        text-align: center;
+                        .categories {
+                            h6 {}
+                        }
+                        .range {
+                            .slidecontainer {
+                                .slider {}
+                                .slider::-webkit-slider-thumb {}
+                                .slider::-moz-range-thumb {}
+                            }
+                            .titleprice {
+                                p {}
+                                h6 {
+                                    a {}
+                                }
+                            }
+                        }
+                        ul {
+                            li {}
+                            .active {}
+                        }
+                        .product {
+                            display: flex;
+                            flex-wrap: wrap!important;
+                            justify-content: center!important;
+                            .headiso {
+                                display: flex !important;
+                                flex-wrap: wrap!important;
+                                align-items: center;
+                                justify-content: space-between;
+                                .count {
+                                    .resultcount {
+                                        margin: 0px 0px;
+                                    }
+                                }
+                                .form-select {
+                                    margin-left: 5px !important;
+                                    width: 250px;
+                                    padding: 10px 10px;
+                                    margin-right: 20px;
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    color: $home-font-color;
+                                    background-color: $white-color;
+                                    background-size: 16px 12px;
+                                    border: 1px solid rgb(194, 192, 192);
+                                    border-radius: 0px;
+                                    cursor: pointer;
+                                    transition: border-color .15s ease-in-out, ;
+                                    &:focus,
+                                     :active {
+                                        box-shadow: 0px 0px 0px 0px;
+                                    }
+                                }
+                            }
+                            .itemBox {
+                                .item {
+                                    position: relative;
+                                    width: 250px;
+                                    height: 420px;
+                                    margin: 5px;
+                                    .img {
+                                        overflow: hidden;
+                                        position: absolute;
+                                        line-height: 0px;
+                                        span {
+                                            left: 0;
+                                            position: absolute;
+                                            display: block;
+                                            top: 0;
+                                            width: auto;
+                                            height: 30px;
+                                            font-family: $home-font;
+                                            font-size: 16px;
+                                            line-height: 19px;
+                                            letter-spacing: 1px;
+                                            text-align: center;
+                                            box-sizing: border-box;
+                                            margin: 10px 0 0 12px;
+                                            padding: 5px 13px;
+                                            z-index: 100;
+                                        }
+                                        .new {
+                                            color: $white-color;
+                                            background-color: $red-color;
+                                            border-color: transparent $red-color transparent transparent;
+                                        }
+                                        .outofstock {
+                                            color: $white-color;
+                                            background-color: $nav-font-color;
+                                            border-color: transparent $nav-font-color transparent transparent;
+                                        }
+                                        .sale {
+                                            color: $nav-font-color;
+                                            background-color: $white-color;
+                                            border-color: transparent $white-color transparent transparent;
+                                        }
+                                        img {
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            transition: 0.3s ease;
+                                            cursor: pointer;
+                                        }
+                                        &:hover {
+                                            img {
+                                                transform: scale(1.1);
+                                            }
+                                        }
+                                    }
+                                    .title {
+                                        cursor: pointer;
+                                        top: 321px;
+                                        font-family: Montserrat, sans-serif;
+                                        position: absolute;
+                                        text-align: center;
+                                        width: 250px;
+                                        padding: 20px 40px;
+                                        h6 {
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            color: black;
+                                        }
+                                        #normal {
+                                            display: block;
+                                            color: grey;
+                                            transition: all 0.3s ease-in-out;
+                                            #disabled {
+                                                text-decoration: line-through;
+                                            }
+                                            #bright {
+                                                font-weight: 700 !important;
+                                                color: $nav-font-color!important;
+                                            }
+                                        }
+                                        #none {
+                                            color: gray;
+                                            transition: all 0.3s ease-in-out;
+                                            display: none;
+                                            font-size: 10px;
+                                            &:hover {
+                                                color: orange;
+                                            }
+                                        }
+                                    }
+                                    &:hover {
+                                        #normal {
+                                            display: none;
+                                        }
+                                        #none {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //shekilin ustundeki buttondan modala kecid
+                #valentine {
+                    .container-fluid {
+                        .row {
+                            .col-md-12 {
+                                flex-wrap: wrap;
+                                .col-lg-6 {
+                                    .item {
+                                        cursor: pointer;
+                                        position: relative;
+                                        .image {
+                                            overflow: hidden;
+                                            img {
+                                                transition: all 0.1s ease-in-out;
+                                                width: 100%;
+                                            }
+                                        }
+                                        &:hover .image {
+                                            img {
+                                                transform: scale(1.05);
+                                            }
+                                        }
+                                        .valentine-modal {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                .col-lg-6 {
+                                    margin-left: 20px;
+                                    padding: 20px;
+                                    h2 {
+                                        margin-bottom: 5px;
+                                        font-family: $home-font;
+                                        font-size: 38px;
+                                        line-height: 1.447em;
+                                        span {
+                                            color: $red-color;
+                                        }
+                                    }
+                                    p {
+                                        color: $home-font-color;
+                                        font-size: 18px;
+                                        font-family: $home-font;
+                                    }
+                                    .iconlip {
+                                        display: flex;
+                                        margin-top: 10px;
+                                        img {
+                                            margin-left: 10px;
+                                            margin-top: 5px;
+                                            width: fit-content;
+                                            height: fit-content;
+                                        }
+                                        p {
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //expertler sectionu
+                #experts {
+                    .container {
+                        .row {
+                            .col-lg-12 {
+                                h2 {}
+                                p {
+                                    margin: 0px;
+                                }
+                            }
+                            .col-lg-3 {
+                                .item {
+                                    img {
+                                        width: 250px;
+                                        height: 250px;
+                                    }
+                                    .title {
+                                        h5 {
+                                            font-size: 10px;
+                                        }
+                                        p {
+                                            font-size: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //subscribe section
+                #join {
+                    display: none;
+                    .container-fluid {
+                        .row {
+                            .col-lg-12 {
+                                .center {
+                                    margin: 0px 60px;
+                                    h3 {}
+                                    .input-group {
+                                        flex-wrap: wrap;
+                                        .form-control {}
+                                        button {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //blog sectionu 
+                #blog {
+                    .container-fluid {
+                        .row {
+                            .col-lg-12 {
+                                .blogtext {
+                                    h2 {}
+                                    #headtextp {
+                                        margin: 10px 10px;
+                                    }
+                                }
+                                .inner {
+                                    flex-wrap: wrap;
+                                    .item {
+                                        .headdate {
+                                            a {}
+                                            .img {
+                                                img {}
+                                            }
+                                            h5 {
+                                                font-size: 10px;
+                                            }
+                                            p {
+                                                font-size: 8px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //slick slider plug in
+                #lastslider {
+                    .container-fluid {
+                        .row {
+                            .col-lg-8 {
+                                .sliderInner {
+                                    .mainSlider {
+                                        .slidercontent {
+                                            .item {
+                                                text-align: center;
+                                                padding: 40px 40px;
+                                                img {}
+                                                .innerp {
+                                                    font-size: 16px!important;
+                                                }
+                                                h6 {}
+                                                .job {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // aboutusyazisi
+                #aboutus {
+                    .center {
+                        margin: 0px 0px !important;
+                        h3 {
+                            p {}
+                        }
+                    }
+                }
+                // xerite sectionu
+                #map {
+                    .gmap_canvas {
+                        overflow: hidden;
+                        padding-bottom: 56.25%;
+                        position: relative;
+                        iframe {
+                            left: 0;
+                            top: 0;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                        }
+                    }
+                }
+                // modalli sekillerden ibaret galleri
+                #gallery {
+                    padding: 70px 50px;
+                    margin-bottom: 50px;
+                    #leftorange {}
+                    #rightorange {
+                        .summary {
+                            padding: 20px 10px;
+                            font-family: $home-font;
+                            .headTitle {
+                                font-size: 38px;
+                                line-height: 1.447em;
+                            }
+                            .price {
+                                margin: 30px 0px;
+                                position: relative;
+                                display: block;
+                                margin: 4px 0 0;
+                                color: #afafaf;
+                            }
+                            .p-description {
+                                margin: 30px 0px;
+                                p {
+                                    color: $home-font-color;
+                                    font-size: 18px;
+                                }
+                            }
+                            .cart {
+                                .quantity-buttons {
+                                    margin: 30px 0px;
+                                    display: flex;
+                                    font-family: Montserrat, sans-serif;
+                                    justify-content: flex-start;
+                                    width: 100%;
+                                    .number {
+                                        width: 240px!important;
+                                        border: 1px solid #eee;
+                                        box-sizing: border-box;
+                                        line-height: 50px;
+                                        height: 51px;
+                                        padding: 0 22px;
+                                        outline: 0px;
+                                    }
+                                }
+                                button {
+                                    background-color: #080808;
+                                    padding: 0px 42px!important;
+                                    color: $white-color;
+                                    width: auto;
+                                    display: inline-block;
+                                    border: 1px solid transparent;
+                                    white-space: nowrap;
+                                    cursor: pointer;
+                                    z-index: 3;
+                                    outline: 0;
+                                    font-size: 12px;
+                                    line-height: 1.833em;
+                                    letter-spacing: .1em;
+                                    font-weight: 800;
+                                    text-transform: uppercase;
+                                    box-sizing: border-box;
+                                    border-radius: 0;
+                                    margin: 0;
+                                }
+                            }
+                            .product_meta {
+                                .normal {
+                                    margin-top: 30px;
+                                    font-size: 12px;
+                                    color: $nav-font-color;
+                                    font-weight: 800;
+                                    font-family: Montserrat, sans-serif;
+                                    a {
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        color: $home-font-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

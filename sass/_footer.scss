@@ -1,0 +1,125 @@
+body {
+    footer {
+        #footermenu {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            background-color: #fefaf3;
+            box-sizing: border-box;
+            .container {
+                .row {
+                    .item {
+                        h6 {
+                            margin-bottom: 23px;
+                            color: $nav-font-color;
+                            font-family: Montserrat;
+                            font-size: 12px;
+                            line-height: 2em;
+                            font-weight: bold;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                        }
+                        ul {
+                            padding: 0;
+                            li {
+                                list-style: none;
+                                a {
+                                    color: $home-font-color;
+                                    text-decoration: none;
+                                    transition: all 0.3s;
+                                    font-family: Montserrat, sans-serif;
+                                    font-size: 12px;
+                                    line-height: 24px;
+                                }
+                                &:hover {
+                                    a {
+                                        color: orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #footbottom {
+            .container {
+                hr {}
+                .row {
+                    // .col-lg-12 {
+                    //     padding: 20px;
+                    .col-lg-4 {
+                        span {
+                            font-family: Montserrat, sans-serif;
+                            font-size: 12px;
+                            color: $home-font-color;
+                            a {
+                                text-decoration: none;
+                                color: $nav-font-color;
+                                transition: all 0.3s;
+                                &:hover {
+                                    color: orange;
+                                }
+                            }
+                        }
+                    }
+                    .col-lg-4 {
+                        .IMG {
+                            img {}
+                        }
+                    }
+                    .col-lg-4 {
+                        .social {
+                            a {
+                                font-family: Montserrat, sans-serif;
+                                font-size: 12px;
+                                margin-right: 17px;
+                                text-decoration: none;
+                                color: $home-font-color;
+                                transition: all 0.3s;
+                                &:hover {
+                                    color: orange;
+                                }
+                            }
+                        }
+                    }
+                    // }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        footer {
+            #footbottom {
+                .container {
+                    hr {}
+                    .row {
+                        // .col-lg-12 {
+                        text-align: center !important;
+                        // flex-wrap: wrap;
+                        .col-lg-4 {
+                            span {
+                                a {}
+                            }
+                        }
+                        .col-lg-6 {
+                            .IMG {
+                                img {}
+                            }
+                        }
+                        .col-lg-2 {
+                            .social {
+                                a {}
+                            }
+                        }
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}
